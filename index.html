@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qafield</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-us">About Us</a></li>
+                 <li><a href="#our-services">Our Services</a></li>
+				 <li><a href="apps.html">Our App</a></li>
+				<li><a href="blog.html">Blog</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <a href="index_cn.html" class="language-switcher">
+                <span>中</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+      
+        <section id="about-us" class="about-section">
+            <div class="about-text" style="max-width: 1000px; margin: 0 auto;">
+                <h2>About Us</h2>
+                <div class="about-accent"></div>
+                <p>Our founder, Mr. Brown Xu, brings more than 20 years of furniture home furnishing industry experience. He has supported leading global home‑furnishing importers such as IKEA, Costco, and Sam’s Club for many years, providing end‑to‑end services across product development, factory qualification, quality assurance, and compliance. Under Mr. Xu’s leadership, Qafield combines deep domain expertise with practical execution to help clients scale with confidence. In 2015, Mr Brown found Qafield in Hangzhou, Zhejiang, Qafield is a professional services firm focused on the home furnishings industry. The company provides integrated technology services, quality control, and information consulting to support clients across product development, manufacturing, and supply chain operations. With established coverage in Mainland China and Southeast Asia, Qafield delivers rigorous inspection and testing, compliance and regulatory advisory, and data‑driven technical solutions, enabling manufacturers, brands, and distribution partners to enhance product reliability, strengthen operational efficiency, and meet international standards.</p>
+            </div>
+            <h2 id="our-services" style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">Our Services</h2>
+            <ul class="services-list">
+                <li>Factory Audit</li>
+                <li>Product Inspection</li>
+                <li>Sourcing Agent</li>
+                <li>Training & Consultation</li>
+                <li>Product Development</li>
+                <li>Testing</li>
+            </ul>
+        </section>
+
+        <section id="contact-us">
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <div class="contact-form">
+                    <h3>Send Message to us:</h3>
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <style>
+                .contact-container {
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+                h1 {
+                    text-align: center;
+                    color: #333;
+                    margin-bottom: 40px;
+                }
+                .contact-info {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 30px;
+                    margin-bottom: 50px;
+                }
+                .info-section {
+                    background: #f8f9fa;
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+                .info-section h2 {
+                    color: #2c3e50;
+                    font-size: 1.2em;
+                    margin-bottom: 15px;
+                }
+                .info-section p {
+                    color: #666;
+                    margin: 5px 0;
+                }
+                .contact-form {
+                    background: #f8f9fa;
+                    padding: 30px;
+                    border-radius: 8px;
+                }
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: #2c3e50;
+                }
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+                textarea {
+                    resize: vertical;
+                }
+                button {
+                    background: #2c3e50;
+                    color: white;
+                    padding: 12px 24px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: background 0.3s;
+                }
+                button:hover {
+                    background: #34495e;
+                }
+                @media (max-width: 768px) {
+                    .contact-info {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script>
+                (function() {
+                    try {
+                        emailjs.init("HLbs9qc6BCnaZVw8u");
+                        console.log('EmailJS 初始化成功，当前环境:', window.location.hostname);
+                    } catch (error) {
+                        console.error('EmailJS 初始化失败:', error);
+                        const errorMessage = document.createElement('div');
+                        errorMessage.style.cssText = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                        errorMessage.textContent = 'EmailJS服务初始化失败，请稍后再试';
+                        document.body.appendChild(errorMessage);
+                        setTimeout(() => errorMessage.remove(), 5000);
+                    }
+                })();
+
+                document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const submitButton = e.target.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.textContent = '发送中...';
+
+                    const templateParams = {
+                        from_name: document.getElementById('name').value,
+                        from_email: document.getElementById('email').value,
+                        message: document.getElementById('message').value,
+                        to_email: 'sales@hanleidehome.com'
+                    };
+
+                    if (!emailjs) {
+                        const errorMessage = document.createElement('div');
+                        errorMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                        errorMessage.textContent = 'EmailJS服务未正确加载，请刷新页面后重试';
+                        document.body.appendChild(errorMessage);
+                        setTimeout(() => errorMessage.remove(), 3000);
+                        submitButton.disabled = false;
+                        submitButton.textContent = 'Send';
+                        return;
+                    }
+
+                    emailjs.send('service_ygcz5ga', 'template_smvljf6', templateParams)
+                        .then(function(response) {
+                            const successMessage = document.createElement('div');
+                            successMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #4CAF50; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                            successMessage.textContent = '消息发送成功！我们会尽快回复您。';
+                            document.body.appendChild(successMessage);
+                            setTimeout(() => successMessage.remove(), 3000);
+                            document.getElementById('inquiryForm').reset();
+                        })
+                        .catch(function(error) {
+                            const errorMessage = document.createElement('div');
+                            errorMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                            errorMessage.textContent = '发送失败：' + (error.text || '请检查网络连接后重试');
+                            document.body.appendChild(errorMessage);
+                            setTimeout(() => errorMessage.remove(), 3000);
+                        })
+                        .finally(function() {
+                            submitButton.disabled = false;
+                            submitButton.textContent = 'Send';
+                        });
+                });
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="app/app-data.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Qafield</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <style>
+        /* 页面特定样式 */
+        main.blog-main {
+            margin-top: 80px;
+        }
+
+        .blog-header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .blog-header h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin: 0 0 12px;
+            font-family: 'Georgia', serif;
+        }
+
+        .blog-header p {
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .blog-header .accent {
+            width: 80px;
+            height: 2px;
+            background: #cdbb8f;
+            margin: 16px auto 0;
+            opacity: 0.8;
+        }
+
+        .blog-grid {
+            padding: 0 20px 40px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 24px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .back-home:hover {
+            background: #555;
+        }
+
+        .back-home-wrapper {
+            text-align: center;
+            padding: 0 20px 40px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about-us">About Us</a></li>
+                <li><a href="index.html#our-services">Our Services</a></li>
+                <li><a href="apps.html">Our App</a></li>
+                <li><a href="blog.html" style="opacity: 1;">Blog</a></li>
+                <li><a href="index.html#contact-us">Contact Us</a></li>
+            </ul>
+            <a href="index_cn.html" class="language-switcher">
+                <span>中</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="blog-main">
+        <section class="services-section">
+            <div class="blog-header">
+                <h1>Our Blog</h1>
+                <p>Insights, updates, and stories from the Qafield team about quality inspection, furniture industry trends, and more.</p>
+                <div class="accent"></div>
+            </div>
+            <div id="blog-grid" class="blog-grid">
+                <!-- Blog posts will be dynamically loaded from blog-data.js -->
+            </div>
+            <div class="back-home-wrapper">
+                <a href="index.html" class="back-home">← Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="blog/blog-data.js"></script>
+    <script src="blog/blog.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "id": "Qafiled_App",
+      "title": "Qafiled App",
+      "description": "Stay connected with Qafield through our mobile application. Download our app to access inspection reports, track quality control progress, and receive real-time updates on your orders.",
+      "coverImage": "qafield_app_logo.jpg",
+      "detailPage": "Qafiled_App.html"
+    }
+  ]
+}

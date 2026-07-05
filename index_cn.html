@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qafield</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="images/qafield_logo.jpg" alt="Qafield 标志"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about-us">关于我们</a></li>
+                <li><a href="#our-services">我们的服务</a></li>
+                <li><a href="#career">招聘</a></li>
+                <li class="nav-contact"><a href="#contact-us">联系我们</a></li>
+            </ul>
+            <a href="index.html" class="language-switcher">
+                <span>En</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-us" class="about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>关于我们</h2>
+                    <div class="about-accent"></div>
+                    <p>我们的创始人 <strong>Brown Xu 先生</strong> 拥有二十余年的家居行业经验，长期为宜家（IKEA）、好市多（Costco）以及山姆会员店（Sam’s Club）等全球大型家居进口商提供配套服务，覆盖产品开发、工厂资质评估、质量保证与合规等全流程。凭借深厚的行业洞察与务实的执行能力，Qafield 在 Xu 先生的带领下，帮助客户稳健拓展与规模化发展。</p>
+                    <p>2015 年，Xu 先生在浙江省杭州市创立 Qafield。公司聚焦家居与家饰产业，提供涵盖技术服务、质量控制与信息咨询的综合解决方案，贯穿产品开发、制造与供应链环节。依托在中国大陆与东南亚的业务覆盖，Qafield 提供严格的检验与测试、合规与法规咨询，以及数据驱动的技术方案，帮助制造商、品牌与渠道伙伴提升产品可靠性、优化运营效率，并满足国际标准。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/founder.jpg" alt="创始人照片">
+                </div>
+            </div>
+        </section>
+
+        <section id="our-services" class="services-section">
+            <h2 style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">我们的服务</h2>
+            <ul class="services-list">
+                <li>工厂审核</li>
+                <li>产品检验</li>
+                <li>采购代理</li>
+                <li>培训与咨询</li>
+                <li>产品开发</li>
+                <li>测试</li>
+            </ul>
+        </section>
+
+       <section id="career" class="career-section">
+            <h2 style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">招聘</h2>
+            <ul class="services-list">
+                <li>家具与家居饰品检验员【泰国】</li>
+                <li>家具测试工程师【中国】</li>
+            </ul>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h2>请将简历发送至：hr@qafield.com</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <div class="contact-container">
+                <h1>联系我们</h1>
+                <div class="contact-form">
+                    <h3>给我们发送消息：</h3>
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">发送</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-section">
+                        <h2>邮寄地址：</h2>
+                        <p>No.2 Xingluo Road, Yaqian Town, Xiaoshan District, Hangzhou City, Zhejiang Province, CN</p>
+                        <p>info@qafield.com</p>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .contact-container {
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+                h1 {
+                    text-align: center;
+                    color: #333;
+                    margin-bottom: 40px;
+                }
+                .contact-info {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 30px;
+                    margin-bottom: 50px;
+                }
+                .info-section {
+                    background: #f8f9fa;
+                    padding: 20px;
+                    border-radius: 8px;
+                }
+                .info-section h2 {
+                    color: #2c3e50;
+                    font-size: 1.2em;
+                    margin-bottom: 15px;
+                }
+                .info-section p {
+                    color: #666;
+                    margin: 5px 0;
+                }
+                .contact-form {
+                    background: #f8f9fa;
+                    padding: 30px;
+                    border-radius: 8px;
+                }
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: #2c3e50;
+                }
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 16px;
+                }
+                textarea {
+                    resize: vertical;
+                }
+                button {
+                    background: #2c3e50;
+                    color: white;
+                    padding: 12px 24px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: background 0.3s;
+                }
+                button:hover {
+                    background: #34495e;
+                }
+                @media (max-width: 768px) {
+                    .contact-info {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script>
+                (function() {
+                    try {
+                        emailjs.init("HLbs9qc6BCnaZVw8u");
+                        console.log('EmailJS 初始化成功，当前环境:', window.location.hostname);
+                    } catch (error) {
+                        console.error('EmailJS 初始化失败:', error);
+                        const errorMessage = document.createElement('div');
+                        errorMessage.style.cssText = 'position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                        errorMessage.textContent = 'EmailJS服务初始化失败，请稍后再试';
+                        document.body.appendChild(errorMessage);
+                        setTimeout(() => errorMessage.remove(), 5000);
+                    }
+                })();
+
+                document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const submitButton = e.target.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.textContent = '发送中...';
+
+                    const templateParams = {
+                        from_name: document.getElementById('name').value,
+                        from_email: document.getElementById('email').value,
+                        message: document.getElementById('message').value,
+                        to_email: 'sales@hanleidehome.com'
+                    };
+
+                    if (!emailjs) {
+                        const errorMessage = document.createElement('div');
+                        errorMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                        errorMessage.textContent = 'EmailJS服务未正确加载，请刷新页面后重试';
+                        document.body.appendChild(errorMessage);
+                        setTimeout(() => errorMessage.remove(), 3000);
+                        submitButton.disabled = false;
+                        submitButton.textContent = '发送';
+                        return;
+                    }
+
+                    emailjs.send('service_ygcz5ga', 'template_smvljf6', templateParams)
+                        .then(function(response) {
+                            const successMessage = document.createElement('div');
+                            successMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #4CAF50; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                            successMessage.textContent = '消息发送成功！我们会尽快回复您。';
+                            document.body.appendChild(successMessage);
+                            setTimeout(() => successMessage.remove(), 3000);
+                            document.getElementById('inquiryForm').reset();
+                        })
+                        .catch(function(error) {
+                            const errorMessage = document.createElement('div');
+                            errorMessage.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f44336; color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;';
+                            errorMessage.textContent = '发送失败：' + (error.text || '请检查网络连接后重试');
+                            document.body.appendChild(errorMessage);
+                            setTimeout(() => errorMessage.remove(), 3000);
+                        })
+                        .finally(function() {
+                            submitButton.disabled = false;
+                            submitButton.textContent = '发送';
+                        });
+                });
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

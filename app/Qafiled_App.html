@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qafield App - My Inspection Assistant</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/icon.jpg" type="image/jpeg">
+    <style>
+        /* ===== 页面特定样式 ===== */
+        main.app-detail-main {
+            margin-top: 80px;
+        }
+
+        /* ===== Main Card Container ===== */
+        .app-detail {
+            max-width: 920px;
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-detail:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 28px 80px rgba(0, 0, 0, 0.16), 0 10px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ===== Hero / Header Section ===== */
+        .app-hero {
+            background: #ffffff;
+            padding: 48px 48px 36px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-hero .app-logo {
+            max-width: 220px;
+            height: auto;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .app-hero .version-badge {
+            display: inline-block;
+            background: #f0f4ff;
+            color: #1a2a6c;
+            font-size: 0.85em;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 20px;
+            margin-bottom: 8px;
+            border: 1px solid #dce3f0;
+        }
+
+        .app-hero h1 {
+            color: #1a2a6c;
+            font-size: 2.4em;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+            font-family: 'Georgia', serif;
+        }
+
+        .app-hero .tagline {
+            color: #555555;
+            font-size: 1.15em;
+            font-weight: 400;
+            margin-top: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        /* ===== Screenshot Image Section ===== */
+        .app-screenshot {
+            padding: 0;
+            background: #f8f9fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #eef0f5;
+        }
+
+        .app-screenshot img {
+            width: 50%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 24px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        /* ===== Content Body ===== */
+        .app-body {
+            padding: 40px 48px 32px;
+        }
+
+        /* ===== About Section ===== */
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #1a2a6c;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Georgia', serif;
+        }
+
+        .section-title .title-accent {
+            display: inline-block;
+            width: 4px;
+            height: 22px;
+            background: linear-gradient(180deg, #4a6fa5, #1a2a6c);
+            border-radius: 2px;
+        }
+
+        .about-text {
+            color: #444;
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 32px;
+            padding: 20px 24px;
+            background: #f8f9fc;
+            border-radius: 12px;
+            border-left: 4px solid #4a6fa5;
+        }
+
+        .about-text p {
+            margin-bottom: 8px;
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ===== Features Grid ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .feature-card {
+            background: #f8f9fc;
+            border-radius: 14px;
+            padding: 22px 18px;
+            text-align: center;
+            border: 1px solid #eef0f5;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(26, 42, 108, 0.08);
+            border-color: #c8d4e6;
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1em;
+            font-weight: 700;
+            color: #1a2a6c;
+            margin-bottom: 6px;
+            font-family: 'Georgia', serif;
+        }
+
+        .feature-card p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* ===== Contact Section ===== */
+        .contact-section {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8edf8 100%);
+            border-radius: 14px;
+            padding: 24px 28px;
+            border: 1px solid #dce3f0;
+        }
+
+        .contact-section .section-title {
+            margin-bottom: 12px;
+        }
+
+        .contact-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .contact-content p {
+            color: #555;
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #1a2a6c;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95em;
+            border: 1px solid #d0d9ec;
+            transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-email:hover {
+            background: #1a2a6c;
+            color: #ffffff;
+            border-color: #1a2a6c;
+            box-shadow: 0 4px 12px rgba(26, 42, 108, 0.2);
+        }
+
+        .contact-email .email-icon {
+            font-size: 1.2em;
+        }
+
+        /* ===== Back Link ===== */
+        .back-link-wrapper {
+            padding: 8px 48px 32px;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #4a6fa5;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95em;
+            padding: 8px 20px;
+            border-radius: 10px;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .back-link:hover {
+            background: #f0f4ff;
+            color: #1a2a6c;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .app-hero {
+                padding: 32px 20px 24px;
+            }
+
+            .app-hero h1 {
+                font-size: 1.8em;
+            }
+
+            .app-body {
+                padding: 24px 20px 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .about-text {
+                padding: 16px 18px;
+            }
+
+            .contact-section {
+                padding: 18px 20px;
+            }
+
+            .contact-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .back-link-wrapper {
+                padding: 4px 20px 24px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../images/qafield_logo.jpg" alt="Qafield Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#about-us">About Us</a></li>
+                <li><a href="../index.html#our-services">Our Services</a></li>
+                <li><a href="../apps.html">Our App</a></li>
+                <li><a href="../index.html#career">JobInfo</a></li>
+                <li><a href="../index.html#Blog">Blog</a></li>
+                <li><a href="../index.html#contact-us">Contact Us</a></li>
+            </ul>
+            <a href="../index_cn.html" class="language-switcher">
+                <span>中</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="app-detail-main">
+        <div class="app-detail">
+            <!-- Hero Header -->
+            <div class="app-hero">
+                <img src="qafield_app_logo.jpg" alt="Qafield Logo" class="app-logo">
+                <h1>Qafield</h1>
+                <div class="version-badge">Version 1.0.1</div>
+                <p class="tagline">My Inspection Assistant</p>
+            </div>
+
+            <!-- Screenshot -->
+            <div class="app-screenshot">
+                <img src="Qafield_App.jpg" alt="Qafield App Screenshot">
+            </div>
+
+            <!-- Content Body -->
+            <div class="app-body">
+                <!-- About Section -->
+                <div class="section-title">
+                    <span class="title-accent"></span>
+                    About
+                </div>
+                <div class="about-text">
+                    <p><strong>Qafield</strong> is a free inspection tool designed to help you finish your inspection tasks efficiently.</p>
+                    <p>Our app only can export JPG format report now. We will upgrade to PDF format in the future if we have enough users and resources.</p>
+                </div>
+
+                <!-- Features -->
+                <div class="section-title">
+                    <span class="title-accent"></span>
+                    Features
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <span class="feature-icon">🔒</span>
+                        <h3>No Registration</h3>
+                        <p>Privacy Safe! Your personal information stays with you.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">📁</span>
+                        <h3>No Upload</h3>
+                        <p>Data Confidential! All processing happens on your device.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🆓</span>
+                        <h3>Permanent Free</h3>
+                        <p>No subscription! Enjoy all features without any cost.</p>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="contact-section">
+                    <div class="section-title">
+                        <span class="title-accent"></span>
+                        Contact
+                    </div>
+                    <div class="contact-content">
+                        <p>If you have any questions or suggestions, please feel free to contact us:</p>
+                        <a href="mailto:support@qafield.com" class="contact-email">
+                            <span class="email-icon">✉️</span>
+                            support@qafield.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Link -->
+            <div class="back-link-wrapper">
+                <a href="../apps.html" class="back-link">← Back to Apps</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
