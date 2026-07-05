@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Apps - Qafield</title>
+    <title>我们的应用 - Qafield</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.jpg" type="image/jpeg">
     <style>
@@ -79,17 +79,17 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+                <a href="index_cn.html"><img src="images/qafield_logo.jpg" alt="Qafield 标志"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="index.html#our-services">Our Services</a></li>
-                <li><a href="apps.html" style="opacity: 1;">Our App</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="index.html#contact-us">Contact Us</a></li>
+                <li><a href="index_cn.html#about-us">关于我们</a></li>
+                <li><a href="index_cn.html#our-services">我们的服务</a></li>
+                <li><a href="apps_cn.html" style="opacity: 1;">我们的应用</a></li>
+                <li><a href="blog_cn.html">博客</a></li>
+                <li><a href="index_cn.html#contact-us">联系我们</a></li>
             </ul>
-            <a href="apps_cn.html" class="language-switcher">
-                <span>中</span>
+            <a href="apps.html" class="language-switcher">
+                <span>EN</span>
             </a>
         </nav>
     </header>
@@ -97,27 +97,27 @@
     <main class="apps-main">
         <section class="services-section">
             <div class="apps-header">
-                <h1>Our Apps</h1>
-                <p>We are committed to developing various apps for quality inspection scenarios and providing them for free to friends in the furniture and related industries.</p>
+                <h1>我们的应用</h1>
+                <p>我们致力于为质检场景开发各种应用，并免费提供给家具及相关行业的朋友们使用。</p>
                 <div class="accent"></div>
             </div>
             <div id="app-grid" class="app-grid">
                 <!-- App entries will be dynamically loaded from app.json -->
             </div>
             <div class="back-home-wrapper">
-                <a href="index.html" class="back-home">← Back to Home</a>
+                <a href="index_cn.html" class="back-home">← 返回首页</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
     </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <script src="app/app-data.js"></script>
-    <script src="app/app.js"></script>
+    <script src="app-cn/app-data.js"></script>
+    <script src="app-cn/app.js"></script>
 </body>
 </html>

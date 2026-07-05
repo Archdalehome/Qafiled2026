@@ -16,32 +16,26 @@
             <ul class="nav-links">
                 <li><a href="#about-us">关于我们</a></li>
                 <li><a href="#our-services">我们的服务</a></li>
-                <li><a href="#career">招聘</a></li>
-                <li class="nav-contact"><a href="#contact-us">联系我们</a></li>
+                <li><a href="apps_cn.html">我们的应用</a></li>
+                <li><a href="blog_cn.html">博客</a></li>
+                <li><a href="#contact-us">联系我们</a></li>
             </ul>
             <a href="index.html" class="language-switcher">
-                <span>En</span>
+                <span>EN</span>
             </a>
         </nav>
     </header>
 
     <main>
+      
         <section id="about-us" class="about-section">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>关于我们</h2>
-                    <div class="about-accent"></div>
-                    <p>我们的创始人 <strong>Brown Xu 先生</strong> 拥有二十余年的家居行业经验，长期为宜家（IKEA）、好市多（Costco）以及山姆会员店（Sam’s Club）等全球大型家居进口商提供配套服务，覆盖产品开发、工厂资质评估、质量保证与合规等全流程。凭借深厚的行业洞察与务实的执行能力，Qafield 在 Xu 先生的带领下，帮助客户稳健拓展与规模化发展。</p>
-                    <p>2015 年，Xu 先生在浙江省杭州市创立 Qafield。公司聚焦家居与家饰产业，提供涵盖技术服务、质量控制与信息咨询的综合解决方案，贯穿产品开发、制造与供应链环节。依托在中国大陆与东南亚的业务覆盖，Qafield 提供严格的检验与测试、合规与法规咨询，以及数据驱动的技术方案，帮助制造商、品牌与渠道伙伴提升产品可靠性、优化运营效率，并满足国际标准。</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/founder.jpg" alt="创始人照片">
-                </div>
+            <div class="about-text" style="max-width: 1000px; margin: 0 auto;">
+                <h2>关于我们</h2>
+                <div class="about-accent"></div>
+                <p>我们的创始人 <strong>Brown Xu 先生</strong> 拥有二十余年的家居行业经验，长期为宜家（IKEA）、好市多（Costco）以及山姆会员店（Sam's Club）等全球大型家居进口商提供配套服务，覆盖产品开发、工厂资质评估、质量保证与合规等全流程。凭借深厚的行业洞察与务实的执行能力，Qafield 在 Xu 先生的带领下，帮助客户稳健拓展与规模化发展。</p>
+                <p>2015 年，Xu 先生在浙江省杭州市创立 Qafield。公司聚焦家居与家饰产业，提供涵盖技术服务、质量控制与信息咨询的综合解决方案，贯穿产品开发、制造与供应链环节。依托在中国大陆与东南亚的业务覆盖，Qafield 提供严格的检验与测试、合规与法规咨询，以及数据驱动的技术方案，帮助制造商、品牌与渠道伙伴提升产品可靠性、优化运营效率，并满足国际标准。</p>
             </div>
-        </section>
-
-        <section id="our-services" class="services-section">
-            <h2 style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">我们的服务</h2>
+            <h2 id="our-services" style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">我们的服务</h2>
             <ul class="services-list">
                 <li>工厂审核</li>
                 <li>产品检验</li>
@@ -50,21 +44,6 @@
                 <li>产品开发</li>
                 <li>测试</li>
             </ul>
-        </section>
-
-       <section id="career" class="career-section">
-            <h2 style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">招聘</h2>
-            <ul class="services-list">
-                <li>家具与家居饰品检验员【泰国】</li>
-                <li>家具测试工程师【中国】</li>
-            </ul>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-section">
-                        <h2>请将简历发送至：hr@qafield.com</h2>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section id="contact-us">
@@ -87,13 +66,6 @@
                         </div>
                         <button type="submit">发送</button>
                     </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-section">
-                        <h2>邮寄地址：</h2>
-                        <p>No.2 Xingluo Road, Yaqian Town, Xiaoshan District, Hangzhou City, Zhejiang Province, CN</p>
-                        <p>info@qafield.com</p>
-                    </div>
                 </div>
             </div>
             <style>
@@ -239,5 +211,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="app/app-data.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>
