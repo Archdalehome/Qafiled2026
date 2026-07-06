@@ -8,6 +8,18 @@
     <link rel="icon" href="images/icon.jpg" type="image/jpeg">
 </head>
 <body>
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="nav-menu-mobile" id="navMenuMobile">
+        <a href="#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="services_cn.html" onclick="closeMobileMenu()">我们的服务</a>
+        <a href="apps_cn.html" onclick="closeMobileMenu()">我们的应用</a>
+        <a href="blog_cn.html" onclick="closeMobileMenu()">博客</a>
+        <a href="#contact-us" onclick="closeMobileMenu()">联系我们</a>
+    </div>
+
     <header>
         <nav>
             <div class="logo">
@@ -15,11 +27,16 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about-us">关于我们</a></li>
-                <li><a href="#our-services">我们的服务</a></li>
+                <li><a href="services_cn.html">我们的服务</a></li>
                 <li><a href="apps_cn.html">我们的应用</a></li>
                 <li><a href="blog_cn.html">博客</a></li>
                 <li><a href="#contact-us">联系我们</a></li>
             </ul>
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <a href="index.html" class="language-switcher">
                 <span>EN</span>
             </a>
@@ -35,16 +52,8 @@
                 <p>我们的创始人 <strong>Brown Xu 先生</strong> 拥有二十余年的家居行业经验，长期为宜家（IKEA）、好市多（Costco）以及山姆会员店（Sam's Club）等全球大型家居进口商提供配套服务，覆盖产品开发、工厂资质评估、质量保证与合规等全流程。凭借深厚的行业洞察与务实的执行能力，Qafield 在 Xu 先生的带领下，帮助客户稳健拓展与规模化发展。</p>
                 <p>2015 年，Xu 先生在浙江省杭州市创立 Qafield。公司聚焦家居与家饰产业，提供涵盖技术服务、质量控制与信息咨询的综合解决方案，贯穿产品开发、制造与供应链环节。依托在中国大陆与东南亚的业务覆盖，Qafield 提供严格的检验与测试、合规与法规咨询，以及数据驱动的技术方案，帮助制造商、品牌与渠道伙伴提升产品可靠性、优化运营效率，并满足国际标准。</p>
             </div>
-            <h2 id="our-services" style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">我们的服务</h2>
-            <ul class="services-list">
-                <li>工厂审核</li>
-                <li>产品检验</li>
-                <li>采购代理</li>
-                <li>培训与咨询</li>
-                <li>产品开发</li>
-                <li>测试</li>
-            </ul>
         </section>
+
 
         <section id="contact-us">
             <div class="contact-container">
@@ -210,6 +219,29 @@
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        // Mobile Navigation
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenuMobile = document.getElementById('navMenuMobile');
+        const navOverlay = document.getElementById('navOverlay');
+
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('open');
+            navMenuMobile.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navMenuMobile.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('open');
+            navMenuMobile.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        navOverlay.addEventListener('click', closeMobileMenu);
     </script>
     <script src="app/app-data.js"></script>
     <script src="app/app.js"></script>

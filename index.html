@@ -8,6 +8,19 @@
     <link rel="icon" href="images/icon.jpg" type="image/jpeg">
 </head>
 <body>
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="nav-menu-mobile" id="navMenuMobile">
+        <a href="#about-us" onclick="closeMobileMenu()">About Us</a>
+        <a href="services.html" onclick="closeMobileMenu()">Our Services</a>
+        <a href="apps.html" onclick="closeMobileMenu()">Our App</a>
+        <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+        <a href="#contact-us" onclick="closeMobileMenu()">Contact Us</a>
+    </div>
+
+
     <header>
         <nav>
             <div class="logo">
@@ -15,16 +28,23 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about-us">About Us</a></li>
-                 <li><a href="#our-services">Our Services</a></li>
+                 <li><a href="services.html">Our Services</a></li>
 				 <li><a href="apps.html">Our App</a></li>
 				<li><a href="blog.html">Blog</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <a href="index_cn.html" class="language-switcher">
                 <span>中</span>
             </a>
         </nav>
     </header>
+
 
     <main>
       
@@ -34,16 +54,8 @@
                 <div class="about-accent"></div>
                 <p>Our founder, Mr. Brown Xu, brings more than 20 years of furniture home furnishing industry experience. He has supported leading global home‑furnishing importers such as IKEA, Costco, and Sam’s Club for many years, providing end‑to‑end services across product development, factory qualification, quality assurance, and compliance. Under Mr. Xu’s leadership, Qafield combines deep domain expertise with practical execution to help clients scale with confidence. In 2015, Mr Brown found Qafield in Hangzhou, Zhejiang, Qafield is a professional services firm focused on the home furnishings industry. The company provides integrated technology services, quality control, and information consulting to support clients across product development, manufacturing, and supply chain operations. With established coverage in Mainland China and Southeast Asia, Qafield delivers rigorous inspection and testing, compliance and regulatory advisory, and data‑driven technical solutions, enabling manufacturers, brands, and distribution partners to enhance product reliability, strengthen operational efficiency, and meet international standards.</p>
             </div>
-            <h2 id="our-services" style="text-align: center; margin-top: 40px; font-size: 2em; color: #333;">Our Services</h2>
-            <ul class="services-list">
-                <li>Factory Audit</li>
-                <li>Product Inspection</li>
-                <li>Sourcing Agent</li>
-                <li>Training & Consultation</li>
-                <li>Product Development</li>
-                <li>Testing</li>
-            </ul>
         </section>
+
 
         <section id="contact-us">
             <div class="contact-container">
@@ -210,7 +222,31 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script>
+        // Mobile Navigation
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenuMobile = document.getElementById('navMenuMobile');
+        const navOverlay = document.getElementById('navOverlay');
+
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('open');
+            navMenuMobile.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navMenuMobile.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('open');
+            navMenuMobile.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        navOverlay.addEventListener('click', closeMobileMenu);
+    </script>
     <script src="app/app-data.js"></script>
     <script src="app/app.js"></script>
+
 </body>
 </html>
