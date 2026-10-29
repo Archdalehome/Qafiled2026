@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qafield</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <title>Qafield 技术服务｜家居与家饰行业检验、测试与合规咨询</title>
+    <meta name="description" content="Qafield 技术服务有限公司 2015 年成立于杭州，专注家居与家饰行业，提供工厂审核、产品检验、测试、合规与法规咨询以及数据驱动的技术方案，业务覆盖中国大陆与东南亚。">
+    <link rel="canonical" href="https://www.qafield.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Qafield 技术服务">
+    <meta property="og:title" content="Qafield 技术服务｜家居与家饰行业检验、测试与合规咨询">
+    <meta property="og:description" content="专注家居与家饰行业的技术服务、质量控制与信息咨询：检验与测试、合规与法规咨询、数据驱动的技术方案，业务覆盖中国大陆与东南亚。">
+    <meta property="og:url" content="https://www.qafield.com/">
+    <meta property="og:image" content="https://www.qafield.com/images/qafield_logo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
 </head>
 <body>
     <!-- Mobile Navigation Overlay -->
@@ -13,144 +21,90 @@
 
     <!-- Mobile Navigation Menu -->
     <div class="nav-menu-mobile" id="navMenuMobile">
-        <a href="#about-us" onclick="closeMobileMenu()">About Us</a>
-        <a href="services.html" onclick="closeMobileMenu()">Our Services</a>
-        <a href="apps.html" onclick="closeMobileMenu()">Our App</a>
-        <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
-        <a href="#contact-us" onclick="closeMobileMenu()">Contact Us</a>
+        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="/services" onclick="closeMobileMenu()">我们的服务</a>
+        <a href="/apps" onclick="closeMobileMenu()">我们的应用</a>
+        <a href="/blog" onclick="closeMobileMenu()">博客</a>
+        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
     </div>
-
 
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#about-us">About Us</a></li>
-                 <li><a href="services.html">Our Services</a></li>
-				 <li><a href="apps.html">Our App</a></li>
-				<li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services">我们的服务</a></li>
+                <li><a href="/apps">我们的应用</a></li>
+                <li><a href="/blog">博客</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
             </ul>
-
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <a href="index_cn.html" class="language-switcher">
-                <span>中</span>
-            </a>
         </nav>
     </header>
 
-
     <main>
-      
-        <section id="about-us" class="about-section">
-            <div class="about-text" style="max-width: 1000px; margin: 0 auto;">
-                <h2>About Us</h2>
-                <div class="about-accent"></div>
-                <p>Our founder, Mr. Brown Xu, brings more than 20 years of furniture home furnishing industry experience. He has supported leading global home‑furnishing importers such as IKEA, Costco, and Sam’s Club for many years, providing end‑to‑end services across product development, factory qualification, quality assurance, and compliance. Under Mr. Xu’s leadership, Qafield combines deep domain expertise with practical execution to help clients scale with confidence. In 2015, Mr Brown found Qafield in Hangzhou, Zhejiang, Qafield is a professional services firm focused on the home furnishings industry. The company provides integrated technology services, quality control, and information consulting to support clients across product development, manufacturing, and supply chain operations. With established coverage in Mainland China and Southeast Asia, Qafield delivers rigorous inspection and testing, compliance and regulatory advisory, and data‑driven technical solutions, enabling manufacturers, brands, and distribution partners to enhance product reliability, strengthen operational efficiency, and meet international standards.</p>
+        <section class="hero">
+            <h1>家居与家饰行业的技术服务与质量控制</h1>
+            <p class="hero-sub">检验与测试、合规与法规咨询，以及数据驱动的技术方案，业务覆盖中国大陆与东南亚。</p>
+            <div class="hero-actions">
+                <a class="btn-primary" href="/services">了解我们的服务</a>
+                <a class="btn-secondary" href="/#contact-us">联系我们</a>
             </div>
         </section>
 
+        <section id="about-us" class="about-section">
+            <div class="about-text" style="max-width: 1000px; margin: 0 auto;">
+                <h2>关于我们</h2>
+                <div class="about-accent"></div>
+                <p>我们的创始人 <strong>Brown Xu 先生</strong> 拥有二十余年的家居行业经验，长期为宜家（IKEA）、好市多（Costco）以及山姆会员店（Sam's Club）等全球大型家居进口商提供配套服务，覆盖产品开发、工厂资质评估、质量保证与合规等全流程。凭借深厚的行业洞察与务实的执行能力，Qafield 在 Xu 先生的带领下，帮助客户稳健拓展与规模化发展。</p>
+                <p>2015 年，Xu 先生在浙江省杭州市创立 Qafield。公司聚焦家居与家饰产业，提供涵盖技术服务、质量控制与信息咨询的综合解决方案，贯穿产品开发、制造与供应链环节。依托在中国大陆与东南亚的业务覆盖，Qafield 提供严格的检验与测试、合规与法规咨询，以及数据驱动的技术方案，帮助制造商、品牌与渠道伙伴提升产品可靠性、优化运营效率，并满足国际标准。</p>
+            </div>
+        </section>
+
+        <section id="services-overview" class="services-overview">
+            <div class="about-text" style="max-width: 1000px; margin: 0 auto;">
+                <h2>核心服务</h2>
+                <div class="about-accent"></div>
+                <ul class="service-list">
+                    <li><a href="/services#factory-audit">工厂审核</a></li>
+                    <li><a href="/services#product-inspection">产品检验</a></li>
+                    <li><a href="/services#sourcing-agent">采购代理</a></li>
+                    <li><a href="/services#training-consultation">培训与咨询</a></li>
+                    <li><a href="/services#product-development">产品开发</a></li>
+                    <li><a href="/services#testing">测试</a></li>
+                </ul>
+                <p class="section-more"><a href="/services">查看全部服务 →</a></p>
+            </div>
+        </section>
 
         <section id="contact-us">
             <div class="contact-container">
-                <h1>Contact Us</h1>
+                <h2>联系我们</h2>
                 <div class="contact-form">
-                    <h3>Send Message to us:</h3>
+                    <h3>给我们发送消息：</h3>
                     <form id="inquiryForm">
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">姓名</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">邮箱</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message">留言</label>
                             <textarea id="message" name="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit">Send</button>
+                        <button type="submit">发送</button>
                     </form>
                 </div>
             </div>
-            <style>
-                .contact-container {
-                    max-width: 800px;
-                    margin: 0 auto;
-                }
-                h1 {
-                    text-align: center;
-                    color: #333;
-                    margin-bottom: 40px;
-                }
-                .contact-info {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                    gap: 30px;
-                    margin-bottom: 50px;
-                }
-                .info-section {
-                    background: #f8f9fa;
-                    padding: 20px;
-                    border-radius: 8px;
-                }
-                .info-section h2 {
-                    color: #2c3e50;
-                    font-size: 1.2em;
-                    margin-bottom: 15px;
-                }
-                .info-section p {
-                    color: #666;
-                    margin: 5px 0;
-                }
-                .contact-form {
-                    background: #f8f9fa;
-                    padding: 30px;
-                    border-radius: 8px;
-                }
-                .form-group {
-                    margin-bottom: 20px;
-                }
-                label {
-                    display: block;
-                    margin-bottom: 8px;
-                    color: #2c3e50;
-                }
-                input, textarea {
-                    width: 100%;
-                    padding: 10px;
-                    border: 1px solid #ddd;
-                    border-radius: 4px;
-                    font-size: 16px;
-                }
-                textarea {
-                    resize: vertical;
-                }
-                button {
-                    background: #2c3e50;
-                    color: white;
-                    padding: 12px 24px;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    font-size: 16px;
-                    transition: background 0.3s;
-                }
-                button:hover {
-                    background: #34495e;
-                }
-                @media (max-width: 768px) {
-                    .contact-info {
-                        grid-template-columns: 1fr;
-                    }
-                }
-            </style>
             <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
             <script>
                 (function() {
@@ -187,7 +141,7 @@
                         document.body.appendChild(errorMessage);
                         setTimeout(() => errorMessage.remove(), 3000);
                         submitButton.disabled = false;
-                        submitButton.textContent = 'Send';
+                        submitButton.textContent = '发送';
                         return;
                     }
 
@@ -209,7 +163,7 @@
                         })
                         .finally(function() {
                             submitButton.disabled = false;
-                            submitButton.textContent = 'Send';
+                            submitButton.textContent = '发送';
                         });
                 });
             </script>
@@ -217,7 +171,7 @@
     </main>
 
     <footer>
-        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -245,8 +199,5 @@
         hamburgerBtn.addEventListener('click', toggleMobileMenu);
         navOverlay.addEventListener('click', closeMobileMenu);
     </script>
-    <script src="app/app-data.js"></script>
-    <script src="app/app.js"></script>
-
 </body>
 </html>

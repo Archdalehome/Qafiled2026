@@ -1,9 +1,9 @@
 /**
  * blog-data.js - Blog 文章数据文件
- * 
+ *
  * 当在 blog/ 目录下添加新的 HTML 文章时，需要在此文件中注册。
  * 每篇文章需要提供：
- *   - id: 唯一标识符（用于文件名）
+ *   - id: 唯一标识符（用于文件名，文章页为 blog/<id>.html，对外链接 /blog/<id>）
  *   - title: 文章标题
  *   - description: 文章摘要
  *   - coverImage: 封面图片（放在 blog/ 目录下）
@@ -15,11 +15,11 @@ window.__BLOG_DATA__ = {
     // 示例文章（可删除）：
     // {
     //   "id": "welcome-to-qafield-blog",
-    //   "title": "Welcome to Qafield Blog",
-    //   "description": "This is our first blog post. Stay tuned for more updates about quality inspection, furniture industry insights, and more.",
+    //   "title": "欢迎来到 Qafield 博客",
+    //   "description": "这是我们的第一篇博客文章。敬请期待更多关于质量检验、家具行业洞察等内容的更新。",
     //   "coverImage": "welcome.jpg",
     //   "date": "2025-01-01",
-    //   "author": "Qafield Team"
+    //   "author": "Qafield 团队"
     // }
   ]
 };

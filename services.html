@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Qafield</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <title>我们的服务｜工厂审核、产品检验、测试与合规咨询 - Qafield 技术服务</title>
+    <meta name="description" content="Qafield 为家居与家饰行业提供六项服务：工厂审核、产品检验、采购代理、培训与咨询、产品开发、测试，帮助制造商、品牌与渠道伙伴提升产品可靠性并满足国际标准。">
+    <link rel="canonical" href="https://www.qafield.com/services">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Qafield 技术服务">
+    <meta property="og:title" content="我们的服务｜工厂审核、产品检验、测试与合规咨询 - Qafield 技术服务">
+    <meta property="og:description" content="六项服务覆盖从产品开发到出货的全流程：工厂审核、产品检验、采购代理、培训与咨询、产品开发、测试。">
+    <meta property="og:url" content="https://www.qafield.com/services">
+    <meta property="og:image" content="https://www.qafield.com/images/qafield_logo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
     <style>
         /* 页面特定样式 - 覆盖 main 的默认边距，使 Services 区块更突出 */
         main.services-main {
@@ -39,11 +47,6 @@
             background: #cdbb8f;
             margin: 16px auto 0;
             opacity: 0.8;
-        }
-
-        /* 确保 Service Grid 在独立页面中有合适的间距 */
-        .service-grid {
-            padding: 0 20px 40px;
         }
 
         /* 返回首页链接 */
@@ -81,54 +84,76 @@
 
     <!-- Mobile Navigation Menu -->
     <div class="nav-menu-mobile" id="navMenuMobile">
-        <a href="index.html#about-us" onclick="closeMobileMenu()">About Us</a>
-        <a href="services.html" onclick="closeMobileMenu()">Our Services</a>
-        <a href="apps.html" onclick="closeMobileMenu()">Our App</a>
-        <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
-        <a href="index.html#contact-us" onclick="closeMobileMenu()">Contact Us</a>
+        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="/services" onclick="closeMobileMenu()">我们的服务</a>
+        <a href="/apps" onclick="closeMobileMenu()">我们的应用</a>
+        <a href="/blog" onclick="closeMobileMenu()">博客</a>
+        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
     </div>
 
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="services.html" style="opacity: 1;">Our Services</a></li>
-                <li><a href="apps.html">Our App</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="index.html#contact-us">Contact Us</a></li>
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services" style="opacity: 1;">我们的服务</a></li>
+                <li><a href="/apps">我们的应用</a></li>
+                <li><a href="/blog">博客</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
             </ul>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <a href="services_cn.html" class="language-switcher">
-                <span>中</span>
-            </a>
         </nav>
     </header>
 
     <main class="services-main">
         <section class="services-section">
             <div class="services-header">
-                <h1>Our Services</h1>
-                <p>Comprehensive quality assurance and compliance solutions tailored for the home furnishings industry.</p>
+                <h1>我们的服务</h1>
+                <p>为家居行业量身定制的全面质量保证和合规解决方案。</p>
                 <div class="accent"></div>
             </div>
-            <div id="service-grid" class="app-grid">
-                <!-- Service entries will be dynamically loaded from services-data.js -->
+
+            <div class="service-grid">
+                <article class="service-card" id="factory-audit">
+                    <h2>工厂审核</h2>
+                    <p>全面的工厂评估，涵盖生产能力、质量管理体系、社会责任和环境标准，确保您的供应商符合国际要求。</p>
+                </article>
+                <article class="service-card" id="product-inspection">
+                    <h2>产品检验</h2>
+                    <p>严格的产品检验服务，包括生产过程中检验、出货前检验和装柜检验，验证产品质量、数量和符合性。</p>
+                </article>
+                <article class="service-card" id="sourcing-agent">
+                    <h2>采购代理</h2>
+                    <p>专业的采购支持，帮助识别和认证可靠的供应商，谈判有竞争力的价格，并管理整个采购流程。</p>
+                </article>
+                <article class="service-card" id="training-consultation">
+                    <h2>培训与咨询</h2>
+                    <p>专家培训项目和咨询服务，涵盖质量控制最佳实践、合规要求和运营卓越。</p>
+                </article>
+                <article class="service-card" id="product-development">
+                    <h2>产品开发</h2>
+                    <p>端到端的产品开发支持，从概念设计、打样、材料选择到生产试运行和最终验证。</p>
+                </article>
+                <article class="service-card" id="testing">
+                    <h2>测试</h2>
+                    <p>全面的测试服务，包括物理、机械、化学和性能测试，确保产品符合国际标准和法规。</p>
+                </article>
             </div>
+
             <div class="back-home-wrapper">
-                <a href="index.html" class="back-home">← Back to Home</a>
+                <a href="/#contact-us" class="back-home">咨询这些服务 →</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
     </footer>
 
     <script>
@@ -157,7 +182,5 @@
         hamburgerBtn.addEventListener('click', toggleMobileMenu);
         navOverlay.addEventListener('click', closeMobileMenu);
     </script>
-    <script src="services/services-data.js"></script>
-    <script src="services/services.js"></script>
 </body>
 </html>

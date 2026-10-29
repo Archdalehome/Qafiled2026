@@ -1,10 +1,10 @@
 /**
  * blog.js - 动态加载 Blog 文章并渲染到页面
- * 
+ *
  * 工作方式：
- * 1. 首先尝试通过 <script> 加载 blog-data.js 数据脚本
- * 2. 如果加载成功，使用其中的数据渲染
- * 3. 如果加载失败（本地 file:// 协议下可能受限），使用内联的默认数据
+ * 1. blog-data.js 已在 blog.html 中同步加载，正常情况下直接使用其中的数据
+ * 2. 如果没有文章（posts 为空），保留 HTML 里写好的静态空状态，不清空页面
+ * 3. 有文章时渲染成卡片，链接指向 /blog/<id>（Cloudflare Pages 的干净 URL）
  */
 (function() {
     'use strict';
@@ -13,11 +13,8 @@
         var blogGrid = document.getElementById('blog-grid');
         if (!blogGrid) return;
 
-        // 清空占位内容
-        blogGrid.innerHTML = '';
-
+        // 没有文章时不渲染，保留 HTML 里的静态内容（对爬虫友好）
         if (!posts || posts.length === 0) {
-            blogGrid.innerHTML = '<div class="blog-empty"><p>No blog posts yet. Check back soon!</p></div>';
             return;
         }
 
@@ -26,14 +23,16 @@
             return new Date(b.date) - new Date(a.date);
         });
 
+        blogGrid.innerHTML = '';
+
         posts.forEach(function(post) {
             var card = document.createElement('a');
-            card.href = 'blog/' + post.id + '.html';
+            card.href = '/blog/' + post.id;
             card.className = 'blog-card';
             card.innerHTML =
                 '<div class="blog-card-image">' +
                     (post.coverImage
-                        ? '<img src="blog/' + post.coverImage + '" alt="' + post.title + '" loading="lazy">'
+                        ? '<img src="/blog/' + post.coverImage + '" alt="' + post.title + '" loading="lazy">'
                         : '<div class="blog-card-placeholder">📝</div>') +
                 '</div>' +
                 '<div class="blog-card-content">' +
@@ -48,24 +47,7 @@
         });
     }
 
-    // 检查是否有通过 blog-data.js 注入的数据
     if (window.__BLOG_DATA__ && window.__BLOG_DATA__.posts) {
         renderPosts(window.__BLOG_DATA__.posts);
-    } else {
-        // 尝试动态加载 blog-data.js
-        var script = document.createElement('script');
-        script.src = 'blog/blog-data.js';
-        script.onload = function() {
-            if (window.__BLOG_DATA__ && window.__BLOG_DATA__.posts) {
-                renderPosts(window.__BLOG_DATA__.posts);
-            } else {
-                renderPosts(null);
-            }
-        };
-        script.onerror = function() {
-            renderPosts(null);
-        };
-        document.body.appendChild(script);
     }
-
 })();

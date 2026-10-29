@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Apps - Qafield</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <title>我们的应用｜免费家具检验工具「我的检验助手」 - Qafield 技术服务</title>
+    <meta name="description" content="Qafield 为质检场景开发免费应用「我的检验助手」：无需注册、无需上传，所有处理均在您的设备上完成，支持导出 JPG 格式检验报告，微信扫码即可使用。">
+    <link rel="canonical" href="https://www.qafield.com/apps">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Qafield 技术服务">
+    <meta property="og:title" content="我们的应用｜免费家具检验工具「我的检验助手」 - Qafield 技术服务">
+    <meta property="og:description" content="免费的检验工具，帮助您高效完成检验任务。无需注册、无需上传，数据始终保留在您的设备上。">
+    <meta property="og:url" content="https://www.qafield.com/apps">
+    <meta property="og:image" content="https://www.qafield.com/app/qafield_app_logo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
     <style>
         /* 页面特定样式 - 覆盖 main 的默认边距，使 App 区块更突出 */
         main.apps-main {
@@ -39,11 +47,6 @@
             background: #cdbb8f;
             margin: 16px auto 0;
             opacity: 0.8;
-        }
-
-        /* 确保 App Grid 在独立页面中有合适的间距 */
-        .app-grid {
-            padding: 0 20px 40px;
         }
 
         /* 返回首页链接 */
@@ -81,57 +84,62 @@
 
     <!-- Mobile Navigation Menu -->
     <div class="nav-menu-mobile" id="navMenuMobile">
-        <a href="index.html#about-us" onclick="closeMobileMenu()">About Us</a>
-        <a href="services.html" onclick="closeMobileMenu()">Our Services</a>
-        <a href="apps.html" onclick="closeMobileMenu()">Our App</a>
-        <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
-        <a href="index.html#contact-us" onclick="closeMobileMenu()">Contact Us</a>
+        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="/services" onclick="closeMobileMenu()">我们的服务</a>
+        <a href="/apps" onclick="closeMobileMenu()">我们的应用</a>
+        <a href="/blog" onclick="closeMobileMenu()">博客</a>
+        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
     </div>
-
 
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="apps.html" style="opacity: 1;">Our App</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="index.html#contact-us">Contact Us</a></li>
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services">我们的服务</a></li>
+                <li><a href="/apps" style="opacity: 1;">我们的应用</a></li>
+                <li><a href="/blog">博客</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
             </ul>
 
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <a href="apps_cn.html" class="language-switcher">
-                <span>中</span>
-            </a>
         </nav>
     </header>
-
 
     <main class="apps-main">
         <section class="services-section">
             <div class="apps-header">
-                <h1>Our Apps</h1>
-                <p>We are committed to developing various apps for quality inspection scenarios and providing them for free to friends in the furniture and related industries.</p>
+                <h1>我们的应用</h1>
+                <p>我们致力于为质检场景开发各种应用，并免费提供给家具及相关行业的朋友们使用。</p>
                 <div class="accent"></div>
             </div>
-            <div id="app-grid" class="app-grid">
-                <!-- App entries will be dynamically loaded from app.json -->
+
+            <div class="app-grid">
+                <a class="app-card" href="/app/Qafiled_App">
+                    <div class="app-card-image">
+                        <img src="/app/qafield_app_logo.jpg" alt="我的检验助手 应用标志" loading="lazy">
+                    </div>
+                    <div class="app-card-content">
+                        <h3>我的检验助手</h3>
+                        <p>免费的检验工具，帮助您高效完成检验任务，支持导出 JPG 格式报告。无需注册、无需上传，所有处理均在您的设备上完成。</p>
+                    </div>
+                </a>
             </div>
+
             <div class="back-home-wrapper">
-                <a href="index.html" class="back-home">← Back to Home</a>
+                <a href="/" class="back-home">← 返回首页</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
     </footer>
 
     <script>
@@ -160,8 +168,5 @@
         hamburgerBtn.addEventListener('click', toggleMobileMenu);
         navOverlay.addEventListener('click', closeMobileMenu);
     </script>
-    <script src="app/app-data.js"></script>
-    <script src="app/app.js"></script>
-
 </body>
 </html>

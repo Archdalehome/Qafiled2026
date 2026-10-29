@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>页面不存在 - Qafield 技术服务</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
+    <style>
+        .notfound {
+            text-align: center;
+            padding: 60px 20px 80px;
+        }
+        .notfound .code {
+            font-family: 'Georgia', serif;
+            font-size: 4em;
+            color: #cdbb8f;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+        .notfound h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0 0 12px;
+        }
+        .notfound p {
+            color: #666;
+            margin: 0 auto 24px;
+            max-width: 520px;
+        }
+        .notfound .links a {
+            display: inline-block;
+            margin: 0 8px 8px;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #2c3e50;
+            color: #fff;
+        }
+        .notfound .links a.secondary {
+            background: #fff;
+            color: #2c3e50;
+            border: 1px solid #cfd6dd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services">我们的服务</a></li>
+                <li><a href="/apps">我们的应用</a></li>
+                <li><a href="/blog">博客</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="notfound">
+            <div class="code">404</div>
+            <h1>没有找到这个页面</h1>
+            <p>您访问的地址可能已经更改或不存在。可以从下面的入口继续浏览，或直接联系我们。</p>
+            <div class="links">
+                <a href="/">返回首页</a>
+                <a class="secondary" href="/services">我们的服务</a>
+                <a class="secondary" href="/#contact-us">联系我们</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

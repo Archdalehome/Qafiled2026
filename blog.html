@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Qafield</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.jpg" type="image/jpeg">
+    <title>博客｜家居质检、验货与合规实践 - Qafield 技术服务</title>
+    <meta name="description" content="Qafield 团队分享质量检验、家具行业趋势、合规与法规要求等一线实践与见解。目前文章正在准备中，敬请期待。">
+    <link rel="canonical" href="https://www.qafield.com/blog">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Qafield 技术服务">
+    <meta property="og:title" content="博客｜家居质检、验货与合规实践 - Qafield 技术服务">
+    <meta property="og:description" content="来自 Qafield 团队的见解、更新和故事，涵盖质量检验、家具行业趋势等。">
+    <meta property="og:url" content="https://www.qafield.com/blog">
+    <meta property="og:image" content="https://www.qafield.com/images/qafield_logo.jpg">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
     <style>
         /* 页面特定样式 */
         main.blog-main {
@@ -38,10 +46,6 @@
             background: #cdbb8f;
             margin: 16px auto 0;
             opacity: 0.8;
-        }
-
-        .blog-grid {
-            padding: 0 20px 40px;
         }
 
         .back-home {
@@ -78,57 +82,52 @@
 
     <!-- Mobile Navigation Menu -->
     <div class="nav-menu-mobile" id="navMenuMobile">
-        <a href="index.html#about-us" onclick="closeMobileMenu()">About Us</a>
-        <a href="services.html" onclick="closeMobileMenu()">Our Services</a>
-        <a href="apps.html" onclick="closeMobileMenu()">Our App</a>
-        <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
-        <a href="index.html#contact-us" onclick="closeMobileMenu()">Contact Us</a>
+        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="/services" onclick="closeMobileMenu()">我们的服务</a>
+        <a href="/apps" onclick="closeMobileMenu()">我们的应用</a>
+        <a href="/blog" onclick="closeMobileMenu()">博客</a>
+        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
     </div>
-
 
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="images/qafield_logo.jpg" alt="Qafield Logo"></a>
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html#about-us">About Us</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="apps.html">Our App</a></li>
-                <li><a href="blog.html" style="opacity: 1;">Blog</a></li>
-                <li><a href="index.html#contact-us">Contact Us</a></li>
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services">我们的服务</a></li>
+                <li><a href="/apps">我们的应用</a></li>
+                <li><a href="/blog" style="opacity: 1;">博客</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
             </ul>
 
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <a href="blog_cn.html" class="language-switcher">
-                <span>中</span>
-            </a>
         </nav>
     </header>
-
 
     <main class="blog-main">
         <section class="services-section">
             <div class="blog-header">
-                <h1>Our Blog</h1>
-                <p>Insights, updates, and stories from the Qafield team about quality inspection, furniture industry trends, and more.</p>
+                <h1>我们的博客</h1>
+                <p>来自 Qafield 团队的见解、更新和故事，涵盖质量检验、家具行业趋势等。</p>
                 <div class="accent"></div>
             </div>
             <div id="blog-grid" class="blog-grid">
-                <!-- Blog posts will be dynamically loaded from blog-data.js -->
+                <div class="blog-empty"><p>暂无博客文章，敬请期待！</p></div>
             </div>
             <div class="back-home-wrapper">
-                <a href="index.html" class="back-home">← Back to Home</a>
+                <a href="/" class="back-home">← 返回首页</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Qafield Technical Service Co., Ltd  <span id="year"></span>. All Rights Reserved.</p>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
     </footer>
 
     <script>
@@ -157,8 +156,7 @@
         hamburgerBtn.addEventListener('click', toggleMobileMenu);
         navOverlay.addEventListener('click', closeMobileMenu);
     </script>
-    <script src="blog/blog-data.js"></script>
-    <script src="blog/blog.js"></script>
-
+    <script src="/blog/blog-data.js"></script>
+    <script src="/blog/blog.js"></script>
 </body>
 </html>
