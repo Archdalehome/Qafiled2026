@@ -11,17 +11,21 @@
 /services_cn          /services            301
 /apps_cn.html         /apps                301
 /apps_cn              /apps                301
-/blog_cn.html         /blog                301
-/blog_cn              /blog                301
+/blog_cn.html         /tech                301
+/blog_cn              /tech                301
 
-# 2. 旧的中文目录
+# 2. 「博客」栏目改为「技术交流」，旧地址 301 过去
+/blog                 /tech                301
+/blog.html            /tech                301
+/blog/                /tech                301
+
+# 3. 旧的中文目录
 /app-cn/*             /app/:splat          301
 /services-cn/*        /services/:splat     301
-/blog-cn/*            /blog/:splat         301
+/blog-cn/*            /tech/:splat         301
 
-# 3. 旧的 .html 地址 → 干净 URL（Pages 自带的 308 会做同样的事，这里显式 301）
+# 4. 旧的 .html 地址 → 干净 URL（Pages 自带的 308 会做同样的事，这里显式 301）
 /index.html           /                    301
 /services.html        /services            301
 /apps.html            /apps                301
-/blog.html            /blog                301
 /app/Qafiled_App.html /app/Qafiled_App     301

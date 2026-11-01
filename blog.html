@@ -3,160 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客｜家居质检、验货与合规实践 - Qafield 技术服务</title>
-    <meta name="description" content="Qafield 团队分享质量检验、家具行业趋势、合规与法规要求等一线实践与见解。目前文章正在准备中，敬请期待。">
-    <link rel="canonical" href="https://www.qafield.com/blog">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Qafield 技术服务">
-    <meta property="og:title" content="博客｜家居质检、验货与合规实践 - Qafield 技术服务">
-    <meta property="og:description" content="来自 Qafield 团队的见解、更新和故事，涵盖质量检验、家具行业趋势等。">
-    <meta property="og:url" content="https://www.qafield.com/blog">
-    <meta property="og:image" content="https://www.qafield.com/images/qafield_logo.jpg">
+    <meta name="robots" content="noindex, follow">
+    <title>页面已迁移到「技术交流」 - Qafield 技术服务</title>
+    <link rel="canonical" href="https://www.qafield.com/tech">
+    <meta http-equiv="refresh" content="0; url=/tech">
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
-    <style>
-        /* 页面特定样式 */
-        main.blog-main {
-            margin-top: 80px;
-        }
-
-        .blog-header {
-            text-align: center;
-            padding: 40px 20px 20px;
-        }
-
-        .blog-header h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin: 0 0 12px;
-            font-family: 'Georgia', serif;
-        }
-
-        .blog-header p {
-            color: #555;
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .blog-header .accent {
-            width: 80px;
-            height: 2px;
-            background: #cdbb8f;
-            margin: 16px auto 0;
-            opacity: 0.8;
-        }
-
-        .back-home {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 24px;
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background 0.3s ease;
-        }
-
-        .back-home:hover {
-            background: #555;
-        }
-
-        .back-home-wrapper {
-            text-align: center;
-            padding: 0 20px 40px;
-        }
-
-        @media (max-width: 768px) {
-            .blog-header h1 {
-                font-size: 1.8em;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Mobile Navigation Overlay -->
-    <div class="nav-overlay" id="navOverlay"></div>
-
-    <!-- Mobile Navigation Menu -->
-    <div class="nav-menu-mobile" id="navMenuMobile">
-        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
-        <a href="/services" onclick="closeMobileMenu()">我们的服务</a>
-        <a href="/apps" onclick="closeMobileMenu()">我们的应用</a>
-        <a href="/blog" onclick="closeMobileMenu()">博客</a>
-        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
-    </div>
-
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="/#about-us">关于我们</a></li>
-                <li><a href="/services">我们的服务</a></li>
-                <li><a href="/apps">我们的应用</a></li>
-                <li><a href="/blog" style="opacity: 1;">博客</a></li>
-                <li><a href="/#contact-us">联系我们</a></li>
-            </ul>
-
-            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
-
-    <main class="blog-main">
-        <section class="services-section">
-            <div class="blog-header">
-                <h1>我们的博客</h1>
-                <p>来自 Qafield 团队的见解、更新和故事，涵盖质量检验、家具行业趋势等。</p>
-                <div class="accent"></div>
-            </div>
-            <div id="blog-grid" class="blog-grid">
-                <div class="blog-empty"><p>暂无博客文章，敬请期待！</p></div>
-            </div>
-            <div class="back-home-wrapper">
-                <a href="/" class="back-home">← 返回首页</a>
-            </div>
-        </section>
+    <main>
+        <div style="max-width: 640px; margin: 80px auto; padding: 40px 24px; text-align: center;">
+            <h1 style="font-size: 1.8em; color: #333;">页面已迁移</h1>
+            <p style="color: #666;">该栏目已改为「技术交流」，正在跳转。</p>
+            <p><a href="/tech" style="display: inline-block; margin-top: 12px; padding: 10px 22px; background: #2c3e50; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600;">前往技术交流</a></p>
+        </div>
     </main>
-
-    <footer>
-        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <script>
-        // Mobile Navigation
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const navMenuMobile = document.getElementById('navMenuMobile');
-        const navOverlay = document.getElementById('navOverlay');
-
-        function toggleMobileMenu() {
-            hamburgerBtn.classList.toggle('open');
-            navMenuMobile.classList.toggle('active');
-            navOverlay.classList.toggle('active');
-            document.body.style.overflow = navMenuMobile.classList.contains('active') ? 'hidden' : '';
-        }
-
-        function closeMobileMenu() {
-            hamburgerBtn.classList.remove('open');
-            navMenuMobile.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        hamburgerBtn.addEventListener('click', toggleMobileMenu);
-        navOverlay.addEventListener('click', closeMobileMenu);
-    </script>
-    <script src="/blog/blog-data.js"></script>
-    <script src="/blog/blog.js"></script>
 </body>
 </html>
