@@ -1078,3 +1078,39 @@ details p {
     color: #2c3e50;
     margin: 16px 0 8px;
 }
+
+/* BS5852 布标图：竖版长图限高居中，两版并排 */
+.figure--label img {
+    width: auto;
+    max-height: 520px;
+    margin: 0 auto;
+}
+
+.figure-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 16px 0 20px;
+}
+
+.figure-pair .figure {
+    margin: 0;
+}
+
+.article ol ul {
+    margin: 6px 0;
+}
+
+.article ol li > ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .figure-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .figure--label img {
+        max-height: 420px;
+    }
+}
