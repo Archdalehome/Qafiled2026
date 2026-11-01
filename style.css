@@ -362,10 +362,10 @@ footer {
     display: block;
 }
 
-/* App Grid Styles */
+/* App Grid Styles：四张卡在桌面端排 2×2，平板以下自动收成单列 */
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 24px;
     max-width: 1000px;
     margin: 24px auto 0;
