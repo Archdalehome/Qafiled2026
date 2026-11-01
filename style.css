@@ -1056,3 +1056,19 @@ details p {
     color: #788694;
     line-height: 1.6;
 }
+
+.figure a {
+    display: block;
+    text-decoration: none;
+}
+
+.figure a:hover img {
+    border-color: #cdbb8f;
+}
+
+.figure-zoom {
+    display: block;
+    margin-top: 4px;
+    color: #007bff;
+    font-size: 0.95em;
+}
