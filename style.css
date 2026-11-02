@@ -1162,3 +1162,36 @@ details p {
     letter-spacing: 1px;
     font-family: 'Georgia', serif;
 }
+
+/* 技术资料：易错点、问答、署名 */
+.pitfall {
+    background: #fdf6ec;
+    border-left: 3px solid #cdbb8f;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+}
+
+.qa {
+    margin: 0 0 14px;
+    padding: 12px 16px;
+    background: #f7f9fb;
+    border-radius: 8px;
+}
+
+.qa-q {
+    margin: 0 0 6px !important;
+    font-weight: 700;
+    color: #22303f;
+}
+
+.qa-a {
+    margin: 0 !important;
+}
+
+.attribution {
+    margin: 26px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid #eef1f5;
+    font-size: 0.92em;
+    color: #4a5a6a;
+}

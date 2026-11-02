@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSC 与 EUDR：有什么不同？如何衔接？｜技术交流 - Qafield 技术服务</title>
+    <meta name="description" content="FSC 认证与欧盟零毁林法规（EUDR）的定位差异、覆盖产品范围、追溯粒度、责任归属与衔接方法，并列出三处企业最容易误判的地方。">
+    <link rel="canonical" href="https://www.qafield.com/tech/fsc-vs-eudr">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Qafield 技术服务">
+    <meta property="og:title" content="FSC 与 EUDR：有什么不同？如何衔接？｜技术交流 - Qafield 技术服务">
+    <meta property="og:description" content="FSC 与 EUDR 的对比与衔接：定位、覆盖范围、追溯粒度、责任归属与三种常见误判。">
+    <meta property="og:url" content="https://www.qafield.com/tech/fsc-vs-eudr">
+    <meta property="og:image" content="https://www.qafield.com/images/tech/fsc-eudr-cover.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/icon.jpg" type="image/jpeg">
+</head>
+<body>
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="nav-menu-mobile" id="navMenuMobile">
+        <a href="/#about-us" onclick="closeMobileMenu()">关于我们</a>
+        <a href="/services" onclick="closeMobileMenu()">服务项目</a>
+        <a href="/apps" onclick="closeMobileMenu()">软件应用</a>
+        <a href="/tech" onclick="closeMobileMenu()">技术交流</a>
+        <a href="/#contact-us" onclick="closeMobileMenu()">联系我们</a>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="/images/qafield_logo.jpg" alt="Qafield 技术服务有限公司"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/#about-us">关于我们</a></li>
+                <li><a href="/services">服务项目</a></li>
+                <li><a href="/apps">软件应用</a></li>
+                <li><a href="/tech" style="opacity: 1;">技术交流</a></li>
+                <li><a href="/#contact-us">联系我们</a></li>
+            </ul>
+            <button class="hamburger" id="hamburgerBtn" aria-label="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="article-main">
+        <nav class="breadcrumb" aria-label="面包屑">
+            <a href="/tech">技术交流</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">FSC 与 EUDR：有什么不同？如何衔接？</span>
+        </nav>
+
+        <article class="article">
+            <h1>FSC 与 EUDR：有什么不同？如何衔接？</h1>
+
+            <figure class="figure">
+                <a href="/images/tech/fsc-eudr-cover.png" target="_blank" rel="noopener"><img src="/images/tech/fsc-eudr-cover.png" alt="FSC 与 EUDR 有什么区别、如何衔接——Qafield 技术交流封面图" loading="lazy"></a>
+                <figcaption>定位差异 · 覆盖范围 · 追溯粒度 · 责任归属<span class="figure-zoom">点击查看原图</span></figcaption>
+            </figure>
+
+            <p class="article-note">近年来，越来越多林业与纸品企业同时面对 FSC 认证与欧盟零毁林法规（EUDR）的合规要求。二者既有明显差异，也存在互补空间。本文用业务视角做一次「对比 + 串联」，并提醒几处容易误判的地方。</p>
+
+            <section class="test-section">
+                <h2>一、定位与约束力度</h2>
+                <p><strong>FSC</strong>：市场采用的自愿性认证体系，由第三方审核，主要面向企业客户与市场采购方（品牌、零售等）。</p>
+                <p><strong>EUDR</strong>：欧盟层面的强制性市场准入法规。谁首次将相关商品投放欧盟市场、或自欧盟出口，谁就是「operator」，必须履行尽职调查（DDS）。</p>
+                <p><strong>违规后果</strong>：EUDR 要求成员国设置有效、相称、具有威慑力的处罚，至少包括罚款（上限不得低于企业欧盟市场年营业额的 4%）、没收商品与收益、禁止从公共资金获益或参与招标等。是否涉及监禁取决于各成员国国内法，EUDR 本身并未强制规定刑罚。</p>
+                <p class="pitfall"><strong>易错点</strong>：很多企业以为「我有 FSC，就能符合 EUDR 要求」。这是错误的。EUDR 的适用与 FSC 无关，即便有 FSC，也必须履行合规义务。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>二、覆盖产品：何处重叠、何处不同</h2>
+                <p><strong>EUDR</strong>：锁定七大商品及其衍生品——木材、牛、可可、咖啡、棕榈油、大豆、橡胶，以关税与商品编码（CN/HS）列于附件一。例如：纸浆与纸（第 47、48 章）在内；「ex 49」表示部分印刷品（如新印刷的书刊报、杂志）也在范围内，但二手或旧书、竹基与再生废纸类排除在外。</p>
+                <p><strong>FSC</strong>：围绕森林产品建立的认证体系，既包括森林经营（FM），也包括产销监管链（CoC），覆盖木材、纸及更多基于森林的材料类别，以及含有这些材料的商品——比如有木制手柄的电钻、或含莫代尔成分的衣服（是否选择认证取决于企业的市场策略）。</p>
+                <p class="pitfall"><strong>易错点</strong>：有的企业以为「竹子、再生纸也要做 EUDR」，其实不在范围内。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>三、供应链追溯与信息粒度</h2>
+                <p><strong>FSC（CoC）</strong>：通过认证声明的传递来保持「身份」；多数情况下，下游企业只需核对上游文件上的 FSC 声明与编号。</p>
+                <p><strong>EUDR</strong>：必须提交 DDS，包含产品信息、供应链参与者、体量与批次、原材料及地理定位（坐标或多边形）、合法性证明、风险评估与缓解等。</p>
+                <p class="pitfall"><strong>易错点</strong>：中间商常以为「只要转交上游的声明就够了」。实际上，EUDR 要求端到端追溯到地块，而且需要交叉验证。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>四、原料源头与地理信息</h2>
+                <p><strong>FSC</strong>：森林经营（FM）认证涉及经营单位的管理与监测，但交易端（CoC 链路）通常不要求在每笔供货中附地理坐标。</p>
+                <p><strong>EUDR</strong>：地理定位是硬性要件，DDS 中需提供地块坐标，并与合法采伐、权属文件相互印证。</p>
+                <p class="pitfall"><strong>易错点</strong>：一些企业误以为 FSC 证书就等于满足 EUDR，其实仍需补齐地块坐标与合法性文件。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>五、森林定义、毁林与退化、人权法遵从</h2>
+                <p><strong>共同点</strong>：都强调不毁林、不退化，遵守法律与人权（含原住民与社区）。</p>
+                <p><strong>差异</strong>：</p>
+                <ul>
+                    <li>FSC 在技术与管理实践上有细化标准（P&amp;C 在国家层面本地化）。</li>
+                    <li>EUDR 是法律，执法更看重合法采伐、权属清晰、原住民权利等硬性证据。</li>
+                </ul>
+                <p class="pitfall"><strong>易错点</strong>：企业常以为「EUDR 检查和 FSC 审核差不多」。实际上两者在内容上有一定差异，在合规证据上 EUDR 要求的更少一些。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>六、风险评估与责任归属</h2>
+                <p><strong>FSC</strong>：风险判断更多由第三方审核员来完成。</p>
+                <p><strong>EUDR</strong>：Operator 自行负责风险评估与缓解（如遥感验证、抽样审核、文件比对），责任不可转嫁。</p>
+                <p class="pitfall"><strong>易错点</strong>：进口商觉得「供应商承诺就够了」，实际上必须自己独立验证。进口商很可能在采购合同中加入相关责任条款，对供应商提出更高要求。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>七、如何把两者串起来用</h2>
+                <p>FSC 证据（FM 与 CoC 记录、受控木尽调等）可以作为 EUDR DDS 的「基础材料」，但必须补齐：</p>
+                <ul>
+                    <li>地块坐标</li>
+                    <li>供应链参与者清单</li>
+                    <li>工业中间品的批次、重量、品类和供应时间信息</li>
+                    <li>来源地合法性文件</li>
+                    <li>来源地风险评估与缓解</li>
+                </ul>
+                <p>FSC 正在推出面向 EUDR 的增强工具（如 Blockchain、Regulatory Module），可提升数据对接，但企业仍需对最终 DDS 负责。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>八、常见问题</h2>
+                <div class="qa">
+                    <p class="qa-q">Q1. 已有 FSC 认证的企业，依靠 FSC 新工具达成 EUDR，需要做什么？</p>
+                    <p class="qa-a">补齐坐标与合法性文件，对齐数据字段，并设计 DDS 提交节奏。</p>
+                </div>
+                <div class="qa">
+                    <p class="qa-q">Q2. 已有 FSC 认证的企业，如果自主合规，需要做什么？</p>
+                    <p class="qa-a">建立「补差清单」：地块坐标、供应链清单、合法性证据、风险评估；用低成本工具收集数据（照片 + GPS + 表格），设立内控 SOP。</p>
+                </div>
+                <div class="qa">
+                    <p class="qa-q">Q3. 没有 FSC 认证的企业，是否需要做 FSC？</p>
+                    <p class="qa-a">EUDR 合规与 FSC 无关，有没有 FSC 都要提交 DDS。但 FSC 仍有市场价值（客户要求、溢价、信任）。建议先做 EUDR 最小合规包，再评估是否引入 FSC 提升市场竞争力。</p>
+                </div>
+            </section>
+
+            <section class="test-section">
+                <h2>九、总结</h2>
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>维度</th>
+                                <th>FSC</th>
+                                <th>EUDR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>性质</td><td>市场信任工具，自愿认证</td><td>法规硬性要求，强制准入</td></tr>
+                            <tr><td>责任主体</td><td>第三方审核员承担主要风险判断</td><td>Operator 自行负责，责任不可转嫁</td></tr>
+                            <tr><td>地理信息</td><td>交易端通常不要求逐笔附坐标</td><td>必须提供地块坐标，并与权属文件互证</td></tr>
+                            <tr><td>违规成本</td><td>失去认证与市场信任</td><td>罚款（上限不低于欧盟年营业额 4%）、没收、禁入公共采购等</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>两者互补，但不可混淆，也不可相互替代。</p>
+                <p>企业要特别避免的三种误判：</p>
+                <ol>
+                    <li>以为「有 FSC 就自动满足 EUDR」；</li>
+                    <li>以为「只要供应商承诺就足够」；</li>
+                    <li>以为「EUDR 检查就像认证审核」。</li>
+                </ol>
+                <p>只有把两者都理解透，企业才能既进得了欧盟市场，又能赢得客户信任。</p>
+            </section>
+
+            <aside class="related">
+                <h2>相关阅读</h2>
+                <p><a href="/tech/bs5852-fire-safety">英国家具防火标准（BS 5852）要点</a> · <a href="/tech/astm-f2057-tip-over">柜类家具防倾倒测试（ASTM F2057-23）要点</a></p>
+            </aside>
+
+            <p class="attribution">作者：马利超　来源：Gallop Consultation 公众号</p>
+
+            <p class="disclaimer">本页为技术资料整理，供内部培训与客户沟通参考，不构成合规意见或认证结论。</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Qafield 技术服务有限公司 <span id="year"></span> 版权所有。</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+        // Mobile Navigation
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenuMobile = document.getElementById('navMenuMobile');
+        const navOverlay = document.getElementById('navOverlay');
+
+        function toggleMobileMenu() {
+            hamburgerBtn.classList.toggle('open');
+            navMenuMobile.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navMenuMobile.classList.contains('active') ? 'hidden' : '';
+        }
+
+        function closeMobileMenu() {
+            hamburgerBtn.classList.remove('open');
+            navMenuMobile.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMobileMenu);
+        navOverlay.addEventListener('click', closeMobileMenu);
+    </script>
+</body>
+</html>
