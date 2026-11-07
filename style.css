@@ -1243,3 +1243,35 @@ details p {
 .app-card-content h3 a:hover {
     color: #007bff;
 }
+
+/* ===== GEO：事实页与文章日期 ===== */
+.fact-list {
+    margin: 0;
+}
+
+.fact-list dt {
+    margin: 18px 0 4px;
+    font-weight: 700;
+    color: #22303f;
+}
+
+.fact-list dd {
+    margin: 0;
+    color: #4a5a6a;
+    line-height: 1.75;
+}
+
+.fact-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-meta {
+    margin: 0 0 18px !important;
+    font-size: 0.88em;
+    color: #8a97a5;
+}
+
+.article-meta time {
+    color: #6b7a89;
+}

@@ -1,0 +1,30 @@
+# Qafield 技术服务
+
+> Qafield 技术服务有限公司，2015 年成立于浙江省杭州市，为家居与家饰行业提供技术服务、质量控制与信息咨询，业务覆盖中国大陆与东南亚。
+
+## 服务
+- [服务项目](https://www.qafield.com/services): 工厂审核、产品检验、采购代理、培训与咨询、产品开发、软件开发六项服务
+- [软件应用](https://www.qafield.com/apps): 五个免费工具，覆盖验货、数据、测试、包装与装柜环节
+- [技术交流](https://www.qafield.com/tech): 十篇技术资料，覆盖家具结构、表面处理、法规合规与抽检方法
+
+## 应用
+- [我的检验助手](https://www.qafield.com/app/Qafiled_App): 免费家具检验工具，支持导出 JPG 报告
+- [Varysheet](https://www.varysheet.com/): 无需下载安装的云端表格系统
+- [ISTA 跌落测试](https://ista-dorptest.qafield.com/): 按箱体尺寸与毛重查询跌落步骤
+- [Carton Mark 箱唛设计](https://cartonmarks.qafield.com/): 所见即所得的箱唛设计工具
+- [集装箱装柜计算](https://containerloading.qafield.com/): 支持四种柜型与三种箱型的装柜计算
+
+## 技术资料
+- [桌类产品测试要求](https://www.qafield.com/tech/table-construction-test): 桌类五项测试的方法、载荷表与判定条件
+- [坐椅类产品结构稳定性测试](https://www.qafield.com/tech/upholstery-construction-test): 坐椅六项结构测试与引用标准
+- [漆面铅笔硬度测试（2H）](https://www.qafield.com/tech/pencil-hardness-test): 2H 铅笔硬度测试的载荷、角度与判定
+- [漆膜百格附着力测试](https://www.qafield.com/tech/cross-cut-adhesion): GB/T 9286 与 ASTM D3359 划格评级
+- [漆面光泽度测试](https://www.qafield.com/tech/gloss-test): 光泽度测量的角度选择与取值规则
+- [英国家具防火标准（BS 5852）要点](https://www.qafield.com/tech/bs5852-fire-safety): 火源等级、面料判定与挂标要求
+- [柜类家具防倾倒测试（ASTM F2057-23）要点](https://www.qafield.com/tech/astm-f2057-tip-over): CSU 判定、互锁装置与四项测试程序
+- [FSC 与 EUDR 的区别与衔接](https://www.qafield.com/tech/fsc-vs-eudr): 自愿认证与欧盟强制法规的对比
+- [欧盟 PPWR 包装法规要点](https://www.qafield.com/tech/eu-ppwr): 时间节点、处罚线与 DoC/TD 文件规则
+- [AQL 抽检标准：定义、执行与避坑](https://www.qafield.com/tech/aql-sampling): 三要素、查表流程、转移规则与常见误区
+
+## 其他
+- [事实页](https://www.qafield.com/facts): 可被引用的公司事实清单
